@@ -1,0 +1,218 @@
+﻿<Window x:Class="MwsProducts.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MarketplacewebServiceProducts" Height="350" Width="525">
+    <Grid>
+        <TabControl>
+            <TabItem Header="ListMatchingProducts">
+                <Grid Background="#FFE5E5E5">
+                    <TextBox x:Name="txtListMatchingSearchValue" 
+                             Text="VB.NET" 
+                             Height="25" 
+                             Width="180" 
+                             Margin="10,10,0,0" 
+                             HorizontalAlignment="Left" 
+                             VerticalAlignment="Top"/>
+                    <Button x:Name="btnListMatchingSearch" 
+                            Content="検索実行" 
+                            Width="120" 
+                            Height="25"
+                            Margin="10,50,0,0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Click="btnListMatchingSearch_Click"
+                            />
+                    <TextBlock x:Name="txtListMatchingResult"
+                               Width="250"
+                               Height="200"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Top"
+                               Margin="200 10 0 0"
+                               />
+                </Grid>
+            </TabItem>
+            <TabItem Header="GetMatchingProduct">
+                <Grid Background="#FFE5E5E5">
+                    <TextBox x:Name="txtSearchValue" 
+                             Text="4774117188" 
+                             Height="25" 
+                             Width="180" 
+                             Margin="10,10,0,0" 
+                             HorizontalAlignment="Left" 
+                             VerticalAlignment="Top"/>
+                    <Button x:Name="btnMatchingSearch" 
+                            Content="検索実行" 
+                            Width="120" 
+                            Height="25"
+                            Margin="10,50,0,0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Click="btnMatchingSearch_Click"
+                            />
+                    <TextBlock x:Name="txtMatchingResult"
+                               Width="250"
+                               Height="200"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Top"
+                               Margin="200 10 0 0"
+                               />
+                </Grid>
+            </TabItem>
+            <TabItem Header="GetMatchingProductForId">
+                <Grid Background="#FFE5E5E5">
+                    <TextBox x:Name="txtMatchingProductSearchValue" 
+                             Text="4774117188"
+                             Height="25" 
+                             Width="180" 
+                             Margin="10,10,0,0" 
+                             HorizontalAlignment="Left" 
+                             VerticalAlignment="Top"/>
+                    <Button x:Name="btnMatchingProductSearch" 
+                            Content="検索実行" 
+                            Width="120" 
+                            Height="25"
+                            Margin="10,50,0,0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Click="btnMatchingProductSearch_Click"
+                            />
+                    <TextBlock x:Name="txtMatchingProductResult"
+                               Width="250"
+                               Height="200"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Top"
+                               Margin="200 10 0 0"
+                               />
+                </Grid>
+            </TabItem>
+            <TabItem Header="GetCompetitivePricingForASIN">
+                <Grid Background="#FFE5E5E5">
+                    <TextBox x:Name="txtCompetitivePricingSearchValue" 
+                             Text="4774117188"
+                             Height="25" 
+                             Width="180" 
+                             Margin="10,10,0,0" 
+                             HorizontalAlignment="Left" 
+                             VerticalAlignment="Top"/>
+                    <Button x:Name="btnCompetitivePricingSearch" 
+                            Content="検索実行" 
+                            Width="120" 
+                            Height="25"
+                            Margin="10,50,0,0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Click="btnCompetitivePricingSearch_Click"
+                            />
+                    <TextBlock x:Name="txtCompetitivePricingResult"
+                            Width="250"
+                            Height="200"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Margin="200 10 0 0"
+                            />
+                </Grid>
+            </TabItem>
+            <TabItem Header="GetLowestOfferListingsForASIN">
+                <Grid Background="#FFE5E5E5">
+                    <TextBox x:Name="txtLowestOfferListingsSearchValue" 
+                             Text="4774117188"
+                             Height="25" 
+                             Width="180" 
+                             Margin="10,10,0,0" 
+                             HorizontalAlignment="Left" 
+                             VerticalAlignment="Top"/>
+                    <Button x:Name="btnLowestOfferListingsSearch" 
+                            Content="検索実行" 
+                            Width="120" 
+                            Height="25"
+                            Margin="10,50,0,0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Click="btnLowestOfferListingsSearch_Click"
+                            />
+                    <TextBlock x:Name="txtLowestOfferListingsResult"
+                            Width="250"
+                            Height="200"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Margin="200 10 0 0"
+                            />
+                </Grid>
+            </TabItem>
+            <TabItem Header="GetMyPriceForASIN">
+                <Grid Background="#FFE5E5E5">
+                    <TextBox x:Name="txtMyPriceSearchValue" 
+                            Text="B00QELA64Y" 
+                            Height="25" 
+                            Width="180" 
+                            Margin="10,10,0,0" 
+                            HorizontalAlignment="Left" 
+                            VerticalAlignment="Top"/>
+                    <Button x:Name="btnMyPriceSearch" 
+                            Content="検索実行" 
+                            Width="120" 
+                            Height="25"
+                            Margin="10,50,0,0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Click="btnMyPriceSearch_Click"
+                            />
+                    <TextBlock x:Name="txtMyPriceResult"
+                            Width="250"
+                            Height="200"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Margin="200 10 0 0"
+                            />
+                </Grid>
+            </TabItem>
+            <TabItem Header="GetProductCategoriesForASIN">
+                <Grid Background="#FFE5E5E5">
+                    <TextBox x:Name="txtProductCategoriesSearchValue" 
+                            Text="4774117188" 
+                            Height="25" 
+                            Width="180" 
+                            Margin="10,10,0,0" 
+                            HorizontalAlignment="Left" 
+                            VerticalAlignment="Top"/>
+                    <Button x:Name="btnProductCategoriesSearch" 
+                            Content="カテゴリ取得" 
+                            Width="120" 
+                            Height="25"
+                            Margin="10,50,0,0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Click="btnProductCategoriesSearch_Click"
+                            />
+                    <TextBlock x:Name="txtProductCategoriesResult"
+                            Width="250"
+                            Height="200"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Margin="200 10 0 0"
+                            />
+                </Grid>
+            </TabItem>
+            <TabItem Header="GetServiceStatus">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="btnServiceStatusSearch" 
+                            Content="状態取得" 
+                            Width="120" 
+                            Height="25"
+                            Margin="10,10,0,0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Click="btnServiceStatusSearch_Click"
+                            />
+                    <TextBlock x:Name="txtServiceStatusResult"
+                            Width="250"
+                            Height="200"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Margin="200 10 0 0"
+                            />
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
